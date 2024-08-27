@@ -21,9 +21,9 @@ from PIL import Image
 # Load Data
 @st.cache_data
 def load_data():
-    Global_Temperature = pd.read_csv("C:/Users/sr322/Downloads/GlobalTemperatures.csv")
-    Temperature_Country = pd.read_csv("C:/Users/sr322/Downloads/GlobalLandTemperaturesByCountry.csv/GlobalLandTemperaturesByCountry.csv")
-    Temperature_City = pd.read_csv("C:/Users/sr322/Downloads/GlobalLandTemperaturesByCity.csv/GlobalLandTemperaturesByCity.csv")
+    Global_Temperature = pd.read_csv("GlobalTemperatures.csv")
+    Temperature_Country = pd.read_csv("GlobalLandTemperaturesByCountry.csv")
+    Temperature_City = pd.read_csv("GlobalLandTemperaturesByCity.csv")
     return Global_Temperature, Temperature_Country, Temperature_City
 
 Global_Temperature, Temperature_Country, Temperature_City = load_data()
